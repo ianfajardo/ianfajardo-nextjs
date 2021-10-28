@@ -5,6 +5,34 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 import Navigation from "../components/Navigation";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope,
+  faLaptopCode,
+  faDraftingCompass,
+  faSeedling,
+  faFileCode,
+  faMobileAlt,
+  faFileAlt,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  fab,
+  faEnvelope,
+  faLaptopCode,
+  faDraftingCompass,
+  faSeedling,
+  faFileCode,
+  faMobileAlt,
+  faFileAlt,
+  faSearch
+);
+
 export default function Home() {
   return (
     <div className="bg-darkpurp">
@@ -65,14 +93,22 @@ export default function Home() {
                       href="https://www.linkedin.com/in/arielianfajardo/"
                       className="btn btn-linkedin me-1"
                     >
-                      <i className="fab fa-linkedin-in"></i>
+                      <FontAwesomeIcon
+                        icon={["fab", "linkedin-in"]}
+                        size="lg"
+                        style={{ width: "16px" }}
+                      />
                     </a>
 
                     <a
                       href="https://twitter.com/ianfajardozx"
                       className="btn btn-twitter me-1 text-white"
                     >
-                      <i className="fab fa-twitter"></i>
+                      <FontAwesomeIcon
+                        icon={["fab", "twitter"]}
+                        size="lg"
+                        style={{ width: "16px" }}
+                      />
                     </a>
                   </div>
                 </ScrollAnimation>
@@ -105,7 +141,9 @@ export default function Home() {
                           className="pe-4"
                         />
                         <div>
-                          <h2 className="mt-3">I'm available for freelance work</h2>
+                          <h2 className="mt-3">
+                            I'm available for freelance work
+                          </h2>
                           <div className="lead mb-3">
                             Let me help you with development, design and
                             everything web
@@ -147,7 +185,12 @@ export default function Home() {
 
               <div className="row">
                 <div className="col-lg-4">
-                  <i className="work-icon fas fa-laptop-code mt-5"></i>
+                  <FontAwesomeIcon
+                    icon={faLaptopCode}
+                    size="lg"
+                    style={{ width: "32px" }}
+                    className="mt-5 work-icon"
+                  />
                   <h2 className="border-under">Development</h2>
                   <p className="lead-low">
                     I want to make sure we use the right technology to give you
@@ -157,35 +200,64 @@ export default function Home() {
                     <div className="col-lg-6">
                       <div className="bg-none card">
                         <div className="card-body">
-                          <i className="far fa-file-code"></i> HTML/CSS
+                          <FontAwesomeIcon
+                            icon={faFileCode}
+                            size="lg"
+                            style={{ width: "16px" }}
+                            className="me-2"
+                          />{" "}
+                          HTML/CSS
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-6">
                       <div className="bg-none card">
                         <div className="card-body">
-                          <i className="fab fa-js-square"></i> Javascript
+                          <FontAwesomeIcon
+                            icon={["fab", "js-square"]}
+                            size="lg"
+                            style={{ width: "16px" }}
+                            className="me-2"
+                          />{" "}
+                          Javascript
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-6">
                       <div className="bg-none card">
                         <div className="card-body">
-                          <i className="fab fa-react"></i> React
+                          <FontAwesomeIcon
+                            icon={["fab", "react"]}
+                            size="lg"
+                            style={{ width: "16px" }}
+                            className="me-2"
+                          />{" "}
+                          React
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-6">
                       <div className="bg-none card">
                         <div className="card-body">
-                          <i className="fab fa-vuejs"></i> Vue
+                          <FontAwesomeIcon
+                            icon={["fab", "vuejs"]}
+                            size="lg"
+                            style={{ width: "16px" }}
+                            className="me-2"
+                          />{" "}
+                          Vue
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4">
-                  <i className="work-icon fas fa-drafting-compass mt-5"></i>
+                  <FontAwesomeIcon
+                    icon={faDraftingCompass}
+                    size="lg"
+                    style={{ width: "32px" }}
+                    className="mt-5 work-icon"
+                  />
                   <h2 className="border-under">Design</h2>
                   <p className="lead-low">
                     I'll help craft a unique design for your project to stand
@@ -196,7 +268,13 @@ export default function Home() {
                     <div className="col-lg-6">
                       <div className="bg-none card">
                         <div className="card-body">
-                          <i className="fas fa-mobile-alt"></i> UI/UX
+                          <FontAwesomeIcon
+                            icon={faMobileAlt}
+                            size="lg"
+                            style={{ width: "16px" }}
+                            className="me-2"
+                          />{" "}
+                          UI/UX
                         </div>
                       </div>
                     </div>
@@ -210,7 +288,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-lg-4">
-                  <i className="work-icon fas fa-seedling mt-5"></i>
+                  <FontAwesomeIcon
+                    icon={faSeedling}
+                    size="lg"
+                    style={{ width: "32px" }}
+                    className="mt-5 work-icon"
+                  />
                   <h2 className="border-under">Planning</h2>
                   <p className="lead-low">
                     Creating a maintainable and evolving application is a step
@@ -267,7 +350,12 @@ export default function Home() {
                   <div className="card-body ele-3">
                     <div className="mb-3">Contact</div>
                     <div className="mb-3">
-                      <i className="fas fa-envelope me-1"></i>{" "}
+                      <FontAwesomeIcon
+                        icon={faEnvelope}
+                        size="lg"
+                        style={{ width: "16px" }}
+                        className="me-2"
+                      />
                       <a
                         className="text-white"
                         href="mailto:hello@ianfajardo.com"
@@ -277,14 +365,24 @@ export default function Home() {
                     </div>
 
                     <div className="mb-3">
-                      <i className="fab fa-twitter me-1"></i>{" "}
+                      <FontAwesomeIcon
+                        icon={["fab", "twitter"]}
+                        size="lg"
+                        style={{ width: "16px" }}
+                        className="me-2"
+                      />
                       <a className="text-white" href="https://twitter.com">
                         @ianfajardozx
                       </a>
                     </div>
 
                     <div className="mb-3">
-                      <i className="fab fa-linkedin-in me-1"></i>{" "}
+                      <FontAwesomeIcon
+                        icon={["fab", "linkedin-in"]}
+                        size="lg"
+                        style={{ width: "16px" }}
+                        className="me-2"
+                      />
                       <a
                         className="text-white"
                         href="https://www.linkedin.com/in/arielianfajardo/"

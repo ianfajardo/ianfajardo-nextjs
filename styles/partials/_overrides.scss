@@ -1,0 +1,24 @@
+$linkedin: #2867B2;
+$twitter: #1DA1F2;
+$darkpurp: #0D0B13;
+
+$theme-colors: (
+  "primary": #f54249,
+  "danger": #ff4136,
+  "muted": #A2A8B0,
+  "light": #F7f7f7,
+  "dark": #212529,
+  "black": #121212,
+  "darkpurp": $darkpurp,
+  "linkedin": $linkedin,
+  "twitter": $twitter
+);
+
+$font-family-sans-serif: "Inter", helvetica, arial, sans-serif;
+$font-family-monospace: "Inter", helvetica, arial, sans-serif;
+
+$headings-font-family: "Fira Sans", helvetica, arial, sans-serif;
+
+
+
+$headings-font-weight: 700;

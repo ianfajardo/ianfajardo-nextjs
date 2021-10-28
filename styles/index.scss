@@ -1,0 +1,151 @@
+//utillity styles
+@import "./partials/fonts";
+@import "./partials/overrides";
+@import "~animate.css/animate.compat.css";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./partials/elevation";
+
+$h2-size: 2rem;
+
+.btn-primary {
+  color: #ffffff;
+}
+
+.lead {
+  font-weight: 300;
+  font-size: 1.75rem;
+}
+
+.lead-low {
+  font-size: 1.5rem;
+}
+
+a.nav-link,  .navbar-dark .navbar-nav .nav-link{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #dddddd;
+}
+
+.border-under {
+  position: relative;
+
+  &:after {
+    content: "";
+    height: 4px;
+    display: block;
+    background: map-get($theme-colors, "primary");
+    width: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.border-under-alt {
+  &:after {
+    width: 75px;
+  }
+}
+
+.jumbo-title {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.jumbo-logo {
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.card {
+  border: none;
+}
+
+.border-radius-high {
+  border-radius: 10px;
+}
+
+.p-high {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.callout-box {
+  max-width: 960px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 1.75rem;
+    margin: 0;
+  }
+
+  .lead {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    color: map-get($theme-colors, "primary");
+    font-weight: 700;
+  }
+
+  .btn-link {
+    color: white;
+  }
+}
+
+.title-lead {
+  font-size: $h2-size;
+}
+
+.work-container {
+  .work-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .work-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  img {
+    padding: 0 2rem;
+  }
+
+  .card, .card-body {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+}
+
+.bg-none {
+  background: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .jumbo-title {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+  }
+
+  .lead-low {
+    font-size: 1.25rem;
+  }
+
+  .p-high {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .work-container {
+    .work-section {
+      padding: 3rem 2rem;
+    }
+  }
+
+  .jumbo-container {
+    margin-bottom: 2rem;
+  }
+}

@@ -7,6 +7,8 @@
 
 $h2-size: 2rem;
 
+
+
 .btn-primary {
   color: #ffffff;
 }
@@ -20,7 +22,8 @@ $h2-size: 2rem;
   font-size: 1.5rem;
 }
 
-a.nav-link,  .navbar-dark .navbar-nav .nav-link{
+a.nav-link,
+.navbar-dark .navbar-nav .nav-link {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #dddddd;
@@ -115,7 +118,8 @@ a.nav-link,  .navbar-dark .navbar-nav .nav-link{
     padding: 0 2rem;
   }
 
-  .card, .card-body {
+  .card,
+  .card-body {
     font-size: 1.25rem;
     font-weight: 400;
   }

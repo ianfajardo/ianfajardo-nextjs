@@ -52,6 +52,11 @@ var logos = [
     description: "Designed for our church young adult group.",
   },
   {
+    name: "Air Force Patch",
+    file: "/as-usa-transparent.png",
+    description: "",
+  },
+  {
     name: "High Tide VB",
     file: "/high-tide-logo.png",
     description: "Designed for a local Instagram account and apparel company.",
@@ -100,7 +105,7 @@ export default function Logos() {
 
       <Navigation />
 
-      <div class="py-4">
+      <div className="py-4">
         <div className="container text-white">
           <div className="row">
             <div className="col-lg-12">
@@ -120,7 +125,10 @@ export default function Logos() {
         <div className="container">
           <div className="row ">
             {logos.map((logo, index) => (
-              <div className="col-lg-4 text-white  mb-5 align-items-center">
+              <div
+                key={index}
+                className="col-lg-4 text-white  mb-5 align-items-center"
+              >
                 <div className="mb-3">
                   <h4>{logo.name}</h4>
                 </div>

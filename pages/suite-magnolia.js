@@ -34,7 +34,7 @@ library.add(
   faSearch
 );
 
-var logos = [
+var inspiration = [
   {
     name: "Sketch",
     file: "/suite-magnolia/image1.jpg",
@@ -45,11 +45,9 @@ var logos = [
     file: "/suite-magnolia/image0.jpg",
     description: "",
   },
-  {
-    name: "Option 1",
-    file: "/suite-magnolia/option-1.png",
-    description: "",
-  },
+];
+
+var logos = [
   {
     name: "Option 1",
     file: "/suite-magnolia/option-1.png",
@@ -124,6 +122,21 @@ export default function SuiteMagnolia() {
 
       <div className="py-5 bg-white">
         <div style={{ maxWidth: "1410px", padding: "15px", margin: "0 auto" }}>
+          <div className="row ">
+            {inspiration.map((logo, index) => (
+              <div key={index} className="col-lg-3 mb-5 align-items-center">
+                <div className="mb-3">
+                  <h4>{logo.name}</h4>
+                </div>
+                <img
+                  className="img-fluid pb-3"
+                  src={logo.file}
+                  alt={logo.name}
+                />
+                <p>{logo.description}</p>
+              </div>
+            ))}
+          </div>
           <div className="row ">
             {logos.map((logo, index) => (
               <div key={index} className="col-lg-4 mb-5 align-items-center">

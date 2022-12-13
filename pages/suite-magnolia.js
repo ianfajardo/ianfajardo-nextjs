@@ -38,36 +38,32 @@ var logos = [
   {
     name: "Sketch",
     file: "/suite-magnolia/image1.jpg",
-    description:
-      "Digitized the Jade Villa sign for use with social media and online presence.",
+    description: "",
   },
   {
     name: "Inspiration",
     file: "/suite-magnolia/image0.jpg",
-    description:
-      "Digitized the Jade Villa sign for use with social media and online presence.",
+    description: "",
   },
   {
     name: "Option 1",
     file: "/suite-magnolia/option-1.png",
-    description:
-      "Digitized the Jade Villa sign for use with social media and online presence.",
+    description: "",
   },
   {
     name: "Option 1",
     file: "/suite-magnolia/option-1.png",
-    description:
-      "Digitized the Jade Villa sign for use with social media and online presence.",
+    description: "",
   },
   {
     name: "Option 2",
     file: "/suite-magnolia/option-2.png",
-    description: "A logo designed for hibachi experience brought to your home.",
+    description: "",
   },
   {
     name: "Option 3",
     file: "/suite-magnolia/option-3.png",
-    description: "Designed for our church young adult group.",
+    description: "",
   },
   {
     name: "Option 4",
@@ -77,7 +73,7 @@ var logos = [
   {
     name: "Option 5",
     file: "/suite-magnolia/option-5.png",
-    description: "Designed for a local Instagram account and apparel company.",
+    description: "",
   },
   {
     name: "Option 1 Color Example",
@@ -87,7 +83,7 @@ var logos = [
   {
     name: "Option 2 Color Example",
     file: "/suite-magnolia/option-2-color.png",
-    description: "Designed for a local Instagram account and apparel company.",
+    description: "",
   },
   {
     name: "Wordmark 1",
@@ -98,7 +94,7 @@ var logos = [
     name: "Wordmark 2",
     file: "/suite-magnolia/wordmark-2.png",
     description: "",
-  }
+  },
 ];
 
 export default function SuiteMagnolia() {

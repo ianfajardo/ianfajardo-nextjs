@@ -36,6 +36,12 @@ library.add(
 
 var logos = [
   {
+    name: "Suite Magnolia Hair",
+    file: "suite-magnolia/final2.png",
+    description: "Designed logo for Suite Magnolia Hair",
+    link: "/suite-magnolia"
+  },
+  {
     name: "Jade Villa",
     file: "/jade-villa-logo-transparent.png",
     description:
@@ -138,6 +144,13 @@ export default function Logos() {
                   alt={logo.name}
                 />
                 <p>{logo.description}</p>
+                {logo.link && (
+                  <p>
+                    <a href={logo.link} class="btn btn-primary">
+                      Learn More
+                    </a>
+                  </p>
+                )}
               </div>
             ))}
           </div>

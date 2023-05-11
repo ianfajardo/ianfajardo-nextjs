@@ -38,11 +38,24 @@ var inspiration = [
   {
     name: "Sketch",
     file: "/suite-magnolia/image1.jpg",
-    description: "",
+    description: "Sketch from Client",
   },
   {
     name: "Inspiration",
     file: "/suite-magnolia/image0.jpg",
+    description: "Additional Inspiration From Client",
+  },
+];
+
+var final = [
+  {
+    name: "Final Long",
+    file: "/suite-magnolia/final1.png",
+    description: "",
+  },
+  {
+    name: "Final Square",
+    file: "/suite-magnolia/final2.png",
     description: "",
   },
 ];
@@ -122,6 +135,21 @@ export default function SuiteMagnolia() {
 
       <div className="py-5 bg-white">
         <div style={{ maxWidth: "1410px", padding: "15px", margin: "0 auto" }}>
+          <div className="row ">
+            {final.map((logo, index) => (
+              <div key={index} className="col-lg-12 mb-5 align-items-center">
+                <div className="mb-3">
+                  <h4>{logo.name}</h4>
+                </div>
+                <img
+                  className="img-fluid pb-3"
+                  src={logo.file}
+                  alt={logo.name}
+                />
+                <p>{logo.description}</p>
+              </div>
+            ))}
+          </div>
           <div className="row ">
             {inspiration.map((logo, index) => (
               <div key={index} className="col-lg-3 mb-5 align-items-center">

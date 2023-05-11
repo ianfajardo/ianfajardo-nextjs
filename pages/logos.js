@@ -146,7 +146,7 @@ export default function Logos() {
                 <p>{logo.description}</p>
                 {logo.link && (
                   <p>
-                    <a href={logo.link} class="btn btn-primary">
+                    <a href={logo.link} className="btn btn-primary">
                       Learn More
                     </a>
                   </p>
